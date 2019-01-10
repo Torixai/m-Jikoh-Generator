@@ -1,0 +1,523 @@
+@import url(https://fonts.googleapis.com/earlyaccess/sawarabigothic.css);
+@import url("https://fonts.googleapis.com/css?family=Arvo");
+@import url("https://fonts.googleapis.com/css?family=Yatra+One");
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjp.css);
+@import url("https://fonts.googleapis.com/earlyaccess/hannari.css");
+
+/*
+--------- reset css--------
+*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+abbr,
+address,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+form,
+table,
+caption,
+tr,
+th,
+td,
+article,
+figure,
+footer,
+header,
+menu,
+nav,
+section,
+summary {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button,
+select,
+textarea {
+  outline: none;
+}
+
+/*
+---------end of reset----------
+*/
+
+html:before,
+html:after,
+body:before,
+body:after {
+  content: "";
+  background: #fff;
+  position: fixed;
+  display: block;
+  z-index: 1;
+}
+
+body {
+  font: 15px/2.1 "Sawarabi Gothic", Arial, Verdana, メイリオ, Meiryo, sans-serif;
+  font-weight: 200;
+  color: #000;
+  min-height: 100%;
+  background: #68e2af url(https://papapaparrot.web.fc2.com/letter.png) no-repeat;
+  background-size: 60%;
+  background-position: right bottom;
+  background-attachment: fixed;
+}
+
+a {
+  color: #075aaa;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #888;
+}
+
+a:active {
+  color: #888;
+}
+
+/*
+---------menu------------
+*/
+
+/*
+-----------mobile---------
+*/
+
+#mobileicon {
+  display: none;
+}
+
+#mobileicon a {
+  font-size: 10px;
+  font-family: "Yatra One", cursive;
+}
+
+/*
+----------header----------
+*/
+#all {
+  margin: 150px auto;
+}
+
+#header {
+  width: 900px;
+  margin: 0 auto auto auto;
+  background-color: #d0e8d5;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+#header h3 {
+  font-family: "Noto Sans JP";
+  font-size: 80px;
+  color: #68e2af;
+  font-weight: 200;
+  margin: -55px auto -30px 3%;
+}
+
+#header p {
+  font-family: "Noto Sans JP";
+  font-size: 18px;
+  color: #718c80;
+  font-weight: 200;
+  margin-left: 3%;
+}
+
+#jikouGreeting {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-left: 10%;
+}
+
+.jikouBl {
+  text-align: center;
+  height: 100px;
+  margin: 30px 50px 0 0;
+}
+
+.jikouBl select {
+  height: 60px;
+  width: 100px;
+  font-family: "Noto Sans JP";
+  font-size: 26px;
+  font-weight: 200;
+  background-color: #68e2af;
+  color: #ffffff;
+  border-style: none;
+  border-radius: 10px;
+  padding: 10px;
+  transition: all 0.2s ease;
+}
+
+.jikouBl select:hover {
+  background: #e84c69;
+}
+
+.jikouBl option {
+  font-family: "Noto Sans JP";
+  font-size: 18px;
+  font-weight: 200;
+  background-color: #fff;
+  color: #000;
+}
+
+.jikouBl button {
+  text-align: center;
+  background-color: #68e2af;
+  border: none;
+  border-radius: 25px;
+  color: #ffffff;
+  font-family: "Noto Sans JP";
+  font-size: 20px;
+  font-weight: 600;
+  width: 100px;
+  height: 50px;
+  margin-top: 10px;
+  transition: all 0.2s ease;
+}
+.jikouBl button:hover {
+  background: #e84c69;
+  width: 120px;
+}
+
+.jikouBl button:active {
+  background: #ffccd3;
+}
+
+#copyTarget {
+  width: 700px;
+  height: 60px;
+  font-family: "Yu Mincho";
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  padding: 10px;
+  color: #1f1f1f;
+  background-color: #ededed;
+  border-style: none;
+  border-radius: 10px;
+  margin-left: 10%;
+}
+
+#copyToC {
+  text-align: center;
+  background-color: #68e2af;
+  border: none;
+  border-radius: 25px;
+  color: #ffffff;
+  font-family: "Noto Sans JP";
+  font-size: 20px;
+  font-weight: 600;
+  width: 100px;
+  height: 50px;
+  margin-left: 10%;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+#copyToC:hover {
+  background: #e84c69;
+  width: 120px;
+}
+
+#copyToC:active {
+  background: #ffccd3;
+}
+
+#modorubt {
+  width: 900px;
+  margin: 20px auto;
+  text-align: right;
+}
+
+#modorubt button {
+  text-align: center;
+  background-color: #e84c69;
+  border: none;
+  border-radius: 40px;
+  color: #ffffff;
+  font-family: "Noto Sans JP";
+  font-size: 20px;
+  font-weight: 600;
+  width: 80px;
+  height: 80px;
+  margin-top: 10px;
+  transition: all 0.2s ease;
+  transform: rotate(15deg);
+  -moz-transform: rotate(15deg);
+  -webkit-transform: rotate(15deg);
+}
+
+#modorubt button:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 0 4px #ffc0cb, 0 0 0 8px #fff;
+}
+/*
+----------body-------------
+*/
+
+h1,
+h2 {
+  font-family: "Arvo", "Sawarabi Gothic", serif;
+}
+
+section h2 {
+  font-size: 25px;
+  font-family: "Yatra One", cursive;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+  text-align: center;
+  padding-top: 30px;
+}
+
+/*
+---------------responsive!!!!!!!!!-----------------
+*/
+
+@media (max-width: 1024px) {
+  #menu ul {
+    width: 90%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 1024px) {
+  #menu li {
+    display: inline-block;
+    padding: 20px 0px 10px;
+  }
+}
+
+/*
+@media  (max-width: 1024px) {
+	#topBack{
+		max-width: 100%;
+	}
+}
+
+@media  (max-width: 1024px) {
+	#title{
+		position: relative;
+	  top: 60%;
+		width: 60%;
+		min-width: 350px;
+   	background-color: rgba(255,255,255,0.8);
+		float: right;
+	}
+}
+@media  (max-width: 1024px) {
+	#title h1{
+		font-size: 70px;
+		margin: 0 50px -80px;
+		text-align: right;
+	}
+}
+
+@media  (max-width: 1024px) {
+	#title h2{
+		font-size: 20px;
+		margin: 50px 55px 0 0;
+		text-align: right;
+	}
+}
+
+*/
+@media (max-width: 1024px) {
+  #photos {
+    margin-top: 0px;
+    z-index: 5;
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .category {
+    display: block;
+    width: 350px;
+    height: 140px;
+    margin: 20px auto;
+  }
+}
+
+/*
+@media  (max-width: 1024px) {
+	#photosCol{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: 0 auto;
+		width: 90%;
+	}
+}
+
+@media  (max-width: 1024px) {
+	.photoColumn{
+		display: flex;
+		float: left;
+		margin: 0;
+		padding-bottom: 40px;
+	}
+}
+
+@media  (max-width: 1024px) {
+	.photo2{
+		width: auto;
+		height: 300px;
+		padding-left: 40px;
+	}
+}
+*/
+@media (max-width: 1024px) {
+  .photoColumn {
+    display: block;
+    float: left;
+    margin-bottom: 100px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .photo1 {
+    display: inline;
+    padding-left: 0px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .photo2 {
+    display: inline;
+    padding-left: 0px;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .photo3 {
+    display: block;
+    width: 90%;
+    margin: 15px auto 50px 0;
+    padding-left: 0;
+    min-height: auto;
+  }
+}
+
+/*
+----------650px---------
+*/
+
+/*
+@media  (max-width: 650px) {
+	#header{
+		height: 720px;
+	}
+}
+
+@media  (max-width: 650px) {
+	#title{
+		margin: 0 auto;
+	}
+}
+
+@media  (max-width: 650px) {
+	.category{
+		display: block;
+		background-color: #f0f0f0;
+		margin: 0 auto 40px;
+	}
+}
+
+@media  (max-width: 650px) {
+	#newsCol{
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+		width: 90%;
+	}
+}
+
+@media  (max-width: 650px) {
+	.repColumn{
+		display: inline-block;
+		margin: 0;
+		padding-bottom: 40px;
+	}
+}
+
+@media  (max-width: 650px) {
+	.col1{
+		margin: 0 auto;
+	}
+}
+
+@media  (max-width: 650px) {
+	.col2{
+		width: 300px;
+		height: auto;
+		padding-left: 0px;
+		margin: 0 auto;
+	}
+}
+*/
+@media (max-width: 700px) {
+  .photoColumn {
+    display: block;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .photo1 {
+    display: block;
+    padding: 0 auto;
+    margin: 0 auto 40px;
+  }
+}
+
+@media (max-width: 700px) {
+  .photo2 {
+    display: block;
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .photo3 {
+    width: 70%;
+    display: block;
+    text-align: left;
+    margin: 0 auto;
+  }
+}
